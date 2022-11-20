@@ -1,0 +1,21 @@
+{
+  "name": "knackfonge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "sass --watch scss:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Saddam6260/knackfonge-page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Saddam6260/knackfonge-page/issues"
+  },
+  "homepage": "https://github.com/Saddam6260/knackfonge-page#readme"
+}
