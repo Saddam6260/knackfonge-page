@@ -1,3 +1,6 @@
+// .main-wrap{
+//     height: 100vh;
+// }
 // header
 
 header{
@@ -9,19 +12,39 @@ header{
         align-items: center;
 
         .head-logo{
-            @include py(12px, 12px);
+            @include py(15px, 15px);
             padding-right: 30px;
             border-right: 2px solid black;
 
             @include media($sm) {
                 padding-right: 50px;
+                @include py(15px, 15px);
+            }
+            @include media($md) {
+                @include py(20px, 20px);
+            }
+            @include media($lg) {
+                padding-right: 70px ;
+            }
+            @include media($xl) {
+                padding-right: 90px;
+                @include py(25px, 25px);
+            }
+            @include media($mxl) {
+                @include py(30px, 30px);
             }
             h5{
-                font-size: 16px;
+                font-size: 15px;
                 font-weight: 500;
 
                 @include media($md) {
-                    font-size: 19px;
+                    font-size: 18px;
+                }
+                @include media($xxl) {
+                    font-size: 22px;
+                }
+                @include media($mxl) {
+                    font-size: 25px;
                 }
             }
         }
@@ -33,6 +56,68 @@ header{
             ul, .contact-icon{
                 display: flex;
             }
+            ul{
+                margin-right: 70px;
+
+                @include media($lg) {
+                    margin-right: 180px;
+                }
+                @include media($xl) {
+                    margin-right: 200px;
+                }
+                @include media($xxl) {
+                    margin-right: 250px;
+                }
+                @include media($mxl) {
+                    margin-right: 360px;
+                }
+                li{
+                    @include px(15px, 15px);
+                    border-right: 2px solid black;
+
+                    @include media($lg) {
+                        @include px(20px, 20px);
+                    }
+                    @include media($xxl) {
+                        @include px(25px, 25px);
+                    }
+                    @include media($mxl) {
+                        @include px(30px, 30px);
+                    }
+
+                    a{
+                        color: black;
+                        font-weight: bold;
+
+                        @include media($xxl) {
+                            font-size: 16px;
+                        } 
+                        @include media($mxl) {
+                            font-size: 20px;
+                        } 
+                    }
+                }
+                li:last-child{
+                    border-right: none;
+                }
+            }
+            .contact-icon{
+                column-gap: 20px;
+
+                @include media($xl) {
+                    column-gap: 30px;
+                }
+                .gmail, .phone{
+                    font-size: 16px;
+
+                    @include media($xxl) {
+                        font-size: 18px;
+                    }
+                    @include media($mxl) {
+                        font-size: 20px;
+                    }
+                }
+            }
         }
         .top-btn{
             @include media($md) {
@@ -40,4 +125,101 @@ header{
             }
         }
     }    
+}
+
+// Main 
+
+main {
+
+    .content{
+        h1{
+            font-size: 28px;
+            display: flex;
+            flex-flow: column wrap;
+            margin-bottom: 15px;
+            margin-top: 90px;
+
+            @include media($sm) {
+                font-size: 35px;
+            }
+            @include media($lg) {
+                font-size: 45px;
+                margin-top: 110px;
+            }
+            @include media($xl) {
+                font-size: 50px;
+            }
+            @include media($xxl) {
+                font-size: 65px;
+                margin-top: 120px;
+                margin-bottom: 20px;
+            }
+            @include media($mxl) {
+                margin-top: 130px;
+                margin-bottom: 25px;
+            }
+            
+            .orange-span{
+                color: $orange;
+            }
+        }
+        p{
+            font-size: 15px;
+            color: $gray;
+            
+            @include media($sm) {
+                display: flex;
+                flex-flow: column wrap;
+            }
+            @include media($lg) {
+                font-size: 17px;
+            }
+            @include media($mxl) {
+                font-size: 20px;
+            }
+        }
+        .btn{
+            background-color: black;
+            color: white;
+            height: 40px;
+            width: 150px;
+            margin-top: 90px;
+            @include media($md) {
+                font-size: 18px;
+            }
+            @include media($lg) {
+                height: 48px;
+                width: 190px;
+                margin-top: 110px;
+            }
+            @include media($xxl) {
+                height: 53px;
+                font-size: 20px;
+                margin-top: 120px;
+            }
+            @include media($mxl) {
+                height: 60px;
+                width: 220px;
+                font-size: 22px;
+                margin-top: 130px;
+            }
+
+            a{
+                color: white;
+                font-size: 16px;
+                margin-right: 5px;
+
+                @include media($md) {
+                    font-size: 18px;
+                }
+                @include media($xxl) {
+                    font-size: 20px;
+                    margin-right: 10px;
+                }
+                @include media($mxl) {
+                    font-size: 22px;
+                }
+            }
+        }
+    }
 }

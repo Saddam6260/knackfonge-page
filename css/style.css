@@ -53,6 +53,10 @@
   }
 }
 
+body {
+  background-color: #fff2ea;
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -99,23 +103,59 @@ header .content {
   align-items: center;
 }
 header .content .head-logo {
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   padding-right: 30px;
   border-right: 2px solid black;
 }
 @media only screen and (min-width: 576px) {
   header .content .head-logo {
     padding-right: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  header .content .head-logo {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  header .content .head-logo {
+    padding-right: 70px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  header .content .head-logo {
+    padding-right: 90px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  header .content .head-logo {
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 }
 header .content .head-logo h5 {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 500;
 }
 @media only screen and (min-width: 768px) {
   header .content .head-logo h5 {
-    font-size: 19px;
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  header .content .head-logo h5 {
+    font-size: 22px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  header .content .head-logo h5 {
+    font-size: 25px;
   }
 }
 header .content .menu {
@@ -129,9 +169,208 @@ header .content .menu {
 header .content .menu ul, header .content .menu .contact-icon {
   display: flex;
 }
+header .content .menu ul {
+  margin-right: 70px;
+}
+@media only screen and (min-width: 992px) {
+  header .content .menu ul {
+    margin-right: 180px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  header .content .menu ul {
+    margin-right: 200px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  header .content .menu ul {
+    margin-right: 250px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  header .content .menu ul {
+    margin-right: 360px;
+  }
+}
+header .content .menu ul li {
+  padding-left: 15px;
+  padding-right: 15px;
+  border-right: 2px solid black;
+}
+@media only screen and (min-width: 992px) {
+  header .content .menu ul li {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  header .content .menu ul li {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  header .content .menu ul li {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+header .content .menu ul li a {
+  color: black;
+  font-weight: bold;
+}
+@media only screen and (min-width: 1400px) {
+  header .content .menu ul li a {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  header .content .menu ul li a {
+    font-size: 20px;
+  }
+}
+header .content .menu ul li:last-child {
+  border-right: none;
+}
+header .content .menu .contact-icon {
+  column-gap: 20px;
+}
+@media only screen and (min-width: 1200px) {
+  header .content .menu .contact-icon {
+    column-gap: 30px;
+  }
+}
+header .content .menu .contact-icon .gmail, header .content .menu .contact-icon .phone {
+  font-size: 16px;
+}
+@media only screen and (min-width: 1400px) {
+  header .content .menu .contact-icon .gmail, header .content .menu .contact-icon .phone {
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  header .content .menu .contact-icon .gmail, header .content .menu .contact-icon .phone {
+    font-size: 20px;
+  }
+}
 @media only screen and (min-width: 768px) {
   header .content .top-btn {
     display: none;
+  }
+}
+
+main .content h1 {
+  font-size: 28px;
+  display: flex;
+  flex-flow: column wrap;
+  margin-bottom: 15px;
+  margin-top: 90px;
+}
+@media only screen and (min-width: 576px) {
+  main .content h1 {
+    font-size: 35px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  main .content h1 {
+    font-size: 45px;
+    margin-top: 110px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  main .content h1 {
+    font-size: 50px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  main .content h1 {
+    font-size: 65px;
+    margin-top: 120px;
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  main .content h1 {
+    margin-top: 130px;
+    margin-bottom: 25px;
+  }
+}
+main .content h1 .orange-span {
+  color: #ff6a5f;
+}
+main .content p {
+  font-size: 15px;
+  color: #a09793;
+}
+@media only screen and (min-width: 576px) {
+  main .content p {
+    display: flex;
+    flex-flow: column wrap;
+  }
+}
+@media only screen and (min-width: 992px) {
+  main .content p {
+    font-size: 17px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  main .content p {
+    font-size: 20px;
+  }
+}
+main .content .btn {
+  background-color: black;
+  color: white;
+  height: 40px;
+  width: 150px;
+  margin-top: 90px;
+}
+@media only screen and (min-width: 768px) {
+  main .content .btn {
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  main .content .btn {
+    height: 48px;
+    width: 190px;
+    margin-top: 110px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  main .content .btn {
+    height: 53px;
+    font-size: 20px;
+    margin-top: 120px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  main .content .btn {
+    height: 60px;
+    width: 220px;
+    font-size: 22px;
+    margin-top: 130px;
+  }
+}
+main .content .btn a {
+  color: white;
+  font-size: 16px;
+  margin-right: 5px;
+}
+@media only screen and (min-width: 768px) {
+  main .content .btn a {
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  main .content .btn a {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  main .content .btn a {
+    font-size: 22px;
   }
 }
 
