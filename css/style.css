@@ -686,7 +686,7 @@ main .content .btn a {
 }
 
 #work-together {
-  margin-top: 60px;
+  margin-top: 70px;
 }
 #work-together .container {
   display: flex;
@@ -704,17 +704,17 @@ main .content .btn a {
 }
 @media only screen and (min-width: 768px) {
   #work-together {
-    margin-top: 70px;
+    margin-top: 100px;
   }
 }
 @media only screen and (min-width: 1200px) {
   #work-together {
-    margin-top: 90px;
+    margin-top: 120px;
   }
 }
 @media only screen and (min-width: 1440px) {
   #work-together {
-    margin-top: 100px;
+    margin-top: 140px;
   }
 }
 #work-together .img {
@@ -748,6 +748,114 @@ main .content .btn a {
   #work-together .content h2 {
     font-size: 30px;
   }
+}
+
+#doing-things {
+  margin-top: 70px;
+}
+@media only screen and (min-width: 768px) {
+  #doing-things {
+    margin-top: 100px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #doing-things {
+    margin-top: 120px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  #doing-things {
+    margin-top: 140px;
+  }
+}
+#doing-things .constant {
+  width: 300px;
+}
+@media only screen and (min-width: 576px) {
+  #doing-things .constant {
+    width: 400px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #doing-things .constant {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #doing-things .constant {
+    height: 360px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  #doing-things .constant {
+    height: 400px;
+  }
+}
+#doing-things .constant .img-wrap {
+  height: 230px;
+}
+@media only screen and (min-width: 576px) {
+  #doing-things .constant .img-wrap {
+    height: 250px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #doing-things .constant .img-wrap {
+    height: initial;
+    width: 45%;
+  }
+}
+#doing-things .constant .img-wrap img {
+  width: 100%;
+  height: 100%;
+}
+#doing-things .constant .content {
+  margin-bottom: 40px;
+  width: 300px;
+}
+@media only screen and (min-width: 768px) {
+  #doing-things .constant .content {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #doing-things .constant .content {
+    width: 47%;
+  }
+}
+#doing-things .constant .content h2 {
+  font-size: 22px;
+  line-height: 22px;
+}
+@media only screen and (min-width: 992px) {
+  #doing-things .constant .content h2 {
+    display: flex;
+    flex-flow: column wrap;
+  }
+}
+#doing-things .constant .content p {
+  margin-top: 20px;
+  text-align: start;
+}
+@media only screen and (min-width: 1200px) {
+  #doing-things .constant .content p {
+    display: flex;
+    flex-flow: column wrap;
+  }
+}
+#doing-things .constant .content .btn {
+  margin-top: 20px;
+  background-color: white;
+  color: black;
+}
+#doing-things .constant .content .btn a {
+  color: black;
 }
 
 /*# sourceMappingURL=style.css.map */
