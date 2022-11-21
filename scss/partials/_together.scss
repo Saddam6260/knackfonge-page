@@ -1,0 +1,58 @@
+#work-together{
+    margin-top: 60px;
+    .container{
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        row-gap: 20px;
+
+        @include media($sm) {
+            flex-flow: row wrap;
+            justify-content: center;
+            column-gap: 30px;
+            align-items: start;
+        }
+    }
+
+    @include media($md) {
+        margin-top: 70px;
+    }
+    @include media($xl) {
+        margin-top: 90px;
+    } 
+    @include media($xxl) {
+        margin-top: 100px;
+    } 
+    .img{
+        width: 50px;
+        height: 50px;
+
+        img{
+            height: 100%;
+            width: 100%
+        }
+    }
+
+    .content{
+        h2{
+            text-align: center;
+            font-weight: 400;
+
+            .bold{
+                font-weight: bold;
+            }
+
+            @include media($sm) {
+                display: flex;
+                flex-flow: column wrap;
+                text-align: start;
+            }
+            @include media($lg) {
+                font-size: 28px;
+            }
+            @include media($xxl) {
+                font-size: 30px;
+            }
+        }
+    }
+}

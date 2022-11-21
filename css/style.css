@@ -35,7 +35,7 @@
   }
 }
 
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1440px) {
   .container {
     max-width: 1220px;
   }
@@ -111,7 +111,7 @@ a {
     width: 190px;
   }
 }
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1440px) {
   .btn {
     height: 53px;
     font-size: 20px;
@@ -134,7 +134,7 @@ a {
     font-size: 18px;
   }
 }
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1440px) {
   .btn a {
     font-size: 20px;
     margin-right: 10px;
@@ -224,7 +224,7 @@ header .content .head-logo h5 {
     font-size: 18px;
   }
 }
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1440px) {
   header .content .head-logo h5 {
     font-size: 22px;
   }
@@ -258,7 +258,7 @@ header .content .menu ul {
     margin-right: 200px;
   }
 }
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1440px) {
   header .content .menu ul {
     margin-right: 250px;
   }
@@ -279,7 +279,7 @@ header .content .menu ul li {
     padding-right: 20px;
   }
 }
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1440px) {
   header .content .menu ul li {
     padding-left: 25px;
     padding-right: 25px;
@@ -295,7 +295,7 @@ header .content .menu ul li a {
   color: black;
   font-weight: bold;
 }
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1440px) {
   header .content .menu ul li a {
     font-size: 16px;
   }
@@ -319,7 +319,7 @@ header .content .menu .contact-icon {
 header .content .menu .contact-icon .gmail, header .content .menu .contact-icon .phone {
   font-size: 16px;
 }
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1440px) {
   header .content .menu .contact-icon .gmail, header .content .menu .contact-icon .phone {
     font-size: 18px;
   }
@@ -374,7 +374,7 @@ main .content h1 {
     line-height: 52px;
   }
 }
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1440px) {
   main .content h1 {
     font-size: 65px;
     margin-bottom: 20px;
@@ -429,7 +429,7 @@ main .content .btn {
     margin-top: 100px;
   }
 }
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1440px) {
   main .content .btn {
     height: 53px;
     font-size: 20px;
@@ -454,7 +454,7 @@ main .content .btn a {
     font-size: 18px;
   }
 }
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1440px) {
   main .content .btn a {
     font-size: 20px;
     margin-right: 10px;
@@ -515,7 +515,7 @@ main .content .btn a {
     margin-right: 30px;
   }
 }
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1440px) {
   .count-wrap .count p {
     font-size: 20px;
     margin-right: 40px;
@@ -578,7 +578,7 @@ main .content .btn a {
     line-height: 52px;
   }
 }
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1440px) {
   .product-wrap .product-head h1 {
     font-size: 65px;
     line-height: 58px;
@@ -607,6 +607,16 @@ main .content .btn a {
     justify-content: space-between;
   }
 }
+@media only screen and (min-width: 992px) {
+  .constant {
+    height: 360px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .constant {
+    height: 400px;
+  }
+}
 .constant .img-wrap {
   height: 230px;
 }
@@ -618,7 +628,7 @@ main .content .btn a {
 @media only screen and (min-width: 768px) {
   .constant .img-wrap {
     height: initial;
-    width: 340px;
+    width: 45%;
   }
 }
 .constant .img-wrap img {
@@ -635,6 +645,11 @@ main .content .btn a {
     justify-content: space-between;
   }
 }
+@media only screen and (min-width: 768px) {
+  .constant .content {
+    width: 47%;
+  }
+}
 .constant .content h2 {
   font-size: 22px;
   line-height: 22px;
@@ -645,9 +660,21 @@ main .content .btn a {
     margin-top: 0px;
   }
 }
+@media only screen and (min-width: 992px) {
+  .constant .content h2 {
+    display: flex;
+    flex-flow: column wrap;
+  }
+}
 .constant .content p {
   margin-top: 20px;
   text-align: start;
+}
+@media only screen and (min-width: 1200px) {
+  .constant .content p {
+    display: flex;
+    flex-flow: column wrap;
+  }
 }
 .constant .content .btn {
   margin-top: 20px;
@@ -656,6 +683,71 @@ main .content .btn a {
 }
 .constant .content .btn a {
   color: black;
+}
+
+#work-together {
+  margin-top: 60px;
+}
+#work-together .container {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  row-gap: 20px;
+}
+@media only screen and (min-width: 576px) {
+  #work-together .container {
+    flex-flow: row wrap;
+    justify-content: center;
+    column-gap: 30px;
+    align-items: start;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #work-together {
+    margin-top: 70px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #work-together {
+    margin-top: 90px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  #work-together {
+    margin-top: 100px;
+  }
+}
+#work-together .img {
+  width: 50px;
+  height: 50px;
+}
+#work-together .img img {
+  height: 100%;
+  width: 100%;
+}
+#work-together .content h2 {
+  text-align: center;
+  font-weight: 400;
+}
+#work-together .content h2 .bold {
+  font-weight: bold;
+}
+@media only screen and (min-width: 576px) {
+  #work-together .content h2 {
+    display: flex;
+    flex-flow: column wrap;
+    text-align: start;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #work-together .content h2 {
+    font-size: 28px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  #work-together .content h2 {
+    font-size: 30px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
