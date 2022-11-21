@@ -28,3 +28,54 @@ a{
         @include px(0px, 0px);
     }
 }
+
+.btn{
+    background-color: black;
+    color: white;
+    height: 40px;
+    width: 150px;
+    @include media($md) {
+        font-size: 18px;
+    }
+    @include media($lg) {
+        height: 48px;
+        width: 190px;
+    }
+    @include media($xxl) {
+        height: 53px;
+        font-size: 20px;
+    }
+    @include media($mxl) {
+        height: 60px;
+        width: 220px;
+        font-size: 22px;
+    }
+
+    a{
+        color: white;
+        font-size: 16px;
+        margin-right: 5px;
+
+        @include media($md) {
+            font-size: 18px;
+        }
+        @include media($xxl) {
+            font-size: 20px;
+            margin-right: 10px;
+        }
+        @include media($mxl) {
+            font-size: 22px;
+        }
+    }
+}
+.common-p{
+    font-size: 15px;
+    color: $gray;
+
+    @include media($lg) {
+        font-size: 17px;
+    }
+    @include media($mxl) {
+        font-size: 20px;
+    }
+}
