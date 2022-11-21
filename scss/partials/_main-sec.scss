@@ -1,0 +1,43 @@
+// header
+
+header{
+    border-bottom: 2px solid black;
+
+    .content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .head-logo{
+            @include py(12px, 12px);
+            padding-right: 30px;
+            border-right: 2px solid black;
+
+            @include media($sm) {
+                padding-right: 50px;
+            }
+            h5{
+                font-size: 16px;
+                font-weight: 500;
+
+                @include media($md) {
+                    font-size: 19px;
+                }
+            }
+        }
+        .menu{
+           display: none;
+            @include media($md) {
+                display: flex;
+            }
+            ul, .contact-icon{
+                display: flex;
+            }
+        }
+        .top-btn{
+            @include media($md) {
+                display: none;
+            }
+        }
+    }    
+}

@@ -4,3 +4,24 @@
     font-family: $alex;
     box-sizing: border-box;
 }
+ul{
+    padding: 0px;
+    margin: 0px;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+.container{
+    @include px(10px, 10px);
+
+    @include media($xs) {
+        @include px(10px, 10px);
+    }
+    @include media($sm) {
+        @include px(0px, 0px);
+    }
+}
