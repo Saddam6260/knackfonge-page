@@ -4,182 +4,80 @@
     @include media($sm) {
         margin-top: 0px;
     }
-}
-.count-wrap{
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-    display: flex;
-    flex-flow: row wrap;
-    .count{
-        width: 40%;
-        border-right: 2px solid black;
-        display: flex;
-        justify-content: end;
-        background-image: linear-gradient($orange, $orange);
-        background-repeat: no-repeat;
-        background-position: left top;
-        background-size: 70px 100%;
-        @include py(10px, 10px);
-        @include media($sm) {
-            width: 35%
-        }
+    
+    .constant{
 
-        @include media($lg) {
-            @include py(15px, 15px);
-            width: 25%;
-        }
-        p{
-          margin-right: 10px;
-          font-size: 16px;
-
-          @include media($lg) {
-            font-size: 18px;
-            margin-right: 30px;
-          }
-          @include media($xxl) {
-            font-size: 20px;
-            margin-right: 40px;
-          }
-          .gray{
-            color: $gray;
-          }
-        }
-    }
-}
-.product-wrap{
-    display: flex;
-    flex-flow: row wrap;
-    height: 300px;
-
-    .product-pera{
-        width: 40%;
-        border-right: 2px solid black;
+        display: grid;
+        grid-template-columns: 300px;
+        grid-template-rows: auto auto;
+        grid-template-areas: 'img'
+                            'content';
 
         @include media($sm) {
-            width: 35%;
-        }
-        @include media($lg) {
-            width: 25%;
-        }
-
-        p{
-            margin-top: 50px;
-            text-align: center;
-        }
-    }
-    .product-head{
-        width: 60%;
-        h1{
-            margin-top: 50px;
-            display: flex;
-            flex-flow: column wrap;
-            align-items: center;
-            justify-content: center;
-            font-size: 28px;
-            line-height: 28px;
-
-            @include media($sm) {
-                font-size: 35px;
-                line-height: 34px;
-            }
-            @include media($lg) {
-                font-size: 45px;
-                line-height: 42px;
-
-            }
-            @include media($xl) {
-                font-size: 55px;
-                line-height: 52px;
-            }
-            @include media($xxl) {
-                font-size: 65px;
-                line-height: 58px;
-            }
-            @include media($mxl) {
-                line-height: 62px;
-            }
-        }
-    }
-}
-
-.constant{
-    width: 300px;
-
-    @include media($sm) {
-        width: 400px;
-    }
-    @include media($md) {
-        width: 100%;
-        height: 300px;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-between;
-    }
-    @include media($lg) {
-        height: 360px;
-    }
-    @include media($xxl) {
-        height: 400px;
-    }
-   .img-wrap{
-        height: 230px;
-
-        @include media($sm) {
-            height: 250px;
+            grid-template-columns: 480px;
+            grid-template-rows: 270px auto;
         }
         @include media($md) {
-            height: initial;
-            width: 45%;
+            grid-template-columns: 45% 46%;
+            grid-template-rows: 270px;
+            justify-content: space-between;
+        }
+        @include media($lg) {
+            grid-template-columns: 45% 48%;
+            grid-template-rows: 300px;
+        }
+        @include media($xl) {
+            grid-template-columns: 45% 48%;
+            grid-template-rows: 370px;
         }
 
         img{
             width: 100%;
             height: 100%;
         }
-    }
-    .content{
-        width: 300px;
-        @include media($md) {
-            display: flex;
-            flex-flow: column wrap;
-            justify-content: space-between;
-        }
-        @include media($md) {
-            width: 47%;
-        }
 
-        h2{
-          font-size: 22px;
-          line-height: 22px;
-          margin-top: 15px;
-          
-          @include media($md) {
-            margin-top: 0px;
-          }
-          @include media($lg) {
-            display: flex;
-            flex-flow: column wrap;
-          }
-        }
-        p{
-            margin-top: 20px;
-            text-align: start;
+        .content{
+            margin-top: 30px;
 
             @include media($md) {
-                
-            }
-            @include media($xl) {
                 display: flex;
                 flex-flow: column wrap;
+                justify-content: space-between;
+                margin-top: 0px;
             }
-        }
-        .btn{
-            margin-top: 20px;
-            background-color: white;
-            color: black;
 
-            a{
+            h2{
+                margin-bottom: 20px;
+                @include media($sm) {
+                    display: flex;
+                    flex-flow: column wrap;
+                    font-size: 24px;
+                }
+                @include media($lg) {
+                    font-size: 26px;
+                }
+                @include media($xxl) {
+                    font-size: 30px;
+                }
+            }
+            p{
+                margin-bottom: 30px;
+
+                @include media($md) {
+                    margin-bottom: 0px;
+                }
+                @include media($xl) {
+                    display: flex;
+                    flex-flow: column wrap;
+                }
+            }
+            .btn{
+                background-color: white;
                 color: black;
+
+                a{
+                    color: black;
+                }
             }
         }
     }

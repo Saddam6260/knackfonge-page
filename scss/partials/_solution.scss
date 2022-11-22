@@ -1,0 +1,50 @@
+#solution{
+    margin-top: 70px;
+
+    @include media($md) {
+        margin-top: 100px;
+    }
+    @include media($xl) {
+        margin-top: 120px;
+    } 
+    @include media($xxl) {
+        margin-top: 140px;
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: 45px 340px;
+        grid-template-areas: 'count empty'
+                            'pera head';
+
+        @include media($sm) {
+            grid-template-columns: 35% 65%;
+            grid-template-rows: 45px 330px;
+        }
+        @include media($lg) {
+            grid-template-columns: 25% 75%;
+            grid-template-rows: 55px 400px;
+        }
+        @include media($xxl) {
+            grid-template-rows: 55px 500px;
+        }
+
+        .count{
+            grid-area: count;
+            background-color: orange;
+        }
+        .empty{
+            grid-area: empty;
+            background-color: purple;
+        }
+        .solution-pera{
+            grid-area: pera;
+            background-color: yellow;
+        }
+        .solution-head{
+            grid-area: head;
+            background-color: pink;
+        }
+    }
+}

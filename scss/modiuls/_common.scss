@@ -75,7 +75,110 @@ a{
     @include media($lg) {
         font-size: 17px;
     }
-    @include media($mxl) {
-        font-size: 20px;
+}
+
+.c-content{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 45px 300px;
+    grid-template-areas: 'count empty'
+                        'pera head';
+
+    @include media($sm) {
+        grid-template-columns: 35% 65%;
+        grid-template-rows: 45px 330px;
+    }
+    @include media($lg) {
+        grid-template-columns: 25% 75%;
+        grid-template-rows: 55px 340px;
+    }
+    @include media($xxl) {
+        grid-template-rows: 55px 360px;
+    }
+
+    .count{
+        grid-area: count;
+        border-top: 2px solid black;
+        border-right: 2px solid black;
+        border-bottom: 2px solid black;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: flex-end;
+        justify-content: center;
+        background-image: linear-gradient($orange, $orange);
+        background-position: left top;
+        background-size: 30% 100%;
+        background-repeat: no-repeat;
+
+        p{
+            font-weight: bold;
+            margin-right: 20px;
+            font-size: 16px;
+
+            @include media($lg) {
+                margin-right: 30px;
+                font-size: 18px;
+            }
+            @include media($xxl) {
+                margin-right: 40px;
+            }
+
+            .gray{
+                color: $gray;
+            }
+        }
+    }
+    .empty{
+        grid-area: empty;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+    }
+    .product-pera{
+        grid-area: pera;
+        border-right: 2px solid black;
+        padding-top: 50px;
+
+        p{
+            text-align: center;
+            @include mx(5px, 5px);
+
+            @include media($sm) {
+                display: flex;
+                flex-flow: column wrap;
+                text-align: end;
+                margin-right: 30px;
+            }
+            @include media($xxl) {
+                margin-right: 50px;
+            }
+        }
+    }
+    .product-head{
+        grid-area: head;
+        padding-top: 50px;
+
+        h1{
+            display: flex;
+            flex-flow: column wrap;
+            text-align: center;
+            font-size: 35px;
+            line-height: 34px;
+
+            @include media($sm) {
+                text-align: start;
+                margin-left: 30px;
+                font-size: 45px;
+                line-height: 40px;
+            }
+            @include media($lg) {
+                font-size: 55px;
+                line-height: 50px;
+            }
+            @include media($xxl) {
+                font-size: 60px;
+                line-height: 55px;
+                margin-left: 50px;
+            }
+        }
     }
 }
